@@ -1,0 +1,47 @@
+.landing-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Nền */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.nav {
+  position: relative;
+  z-index: 1;
+  align-items: center;
+}
+
+/* Nội dung chính */
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 5rem;
+  color: #fff;
+}
+
+/* Bên trái */
+.left-content {
+  width: 40%;
+}
+
+/* Bên phải */
+.right-content {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10em;
+}
