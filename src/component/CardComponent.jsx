@@ -1,6 +1,8 @@
-export default function CardComponent({ label, icon, description }) {
+export default function CardComponent({ label, icon, description, className }) {
   return (
-    <div className="lg:w-[260px] lg:h-[80px] p-8 flex items-center bg-blue-900 rounded-md">
+    <div
+      className={` p-8 flex items-center bg-blue-900/40 rounded-md ${className}`}
+    >
       <img
         src={icon}
         alt=""

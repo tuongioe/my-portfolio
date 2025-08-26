@@ -16,10 +16,10 @@ function LandingPage() {
       <BackGroundComponent
         className="background"
         raysOrigin="top-center"
-        raysColor="#00ffff"
+        raysColor="#ffffff"
         raysSpeed={1.5}
-        lightSpread={0.8}
-        rayLength={1.2}
+        lightSpread={1.0}
+        rayLength={4.0}
         followMouse={true}
         mouseInfluence={0.1}
         noiseAmount={0.1}
