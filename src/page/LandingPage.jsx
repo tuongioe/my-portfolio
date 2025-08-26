@@ -4,6 +4,10 @@ import BackGroundComponent from "../component/BackGroundComponent";
 import "../assets/style/LandingPage.css";
 import Navigation from "../component/Navigation";
 import TextType from "../component/TextType";
+import ButtonComponent from "../component/ButtonComponent";
+import { RiDownloadLine } from "react-icons/ri";
+import { MdOutlineExplore } from "react-icons/md";
+import Introduce from "../component/Introduce";
 
 function LandingPage() {
   return (
@@ -27,8 +31,18 @@ function LandingPage() {
       {/* Nội dung chính */}
       <div className="content">
         <div className="lg:ml-[6.5vw] ">
+          <div className="flex items-center w-[30vw] bg-gray-800/40 mb-5 rounded-xl font-semibold">
+            <img
+              src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756195912/da955287bab2e05ae8383782bc6ad6b4-removebg-preview_fezhdr.png"
+              alt=""
+              style={{ maxWidth: "3rem", paddingLeft: "10px" }}
+            />
+            <p className="p-2">
+              "Design with purpose. Develop with precision."
+            </p>
+          </div>
           <TextType
-            className="text-5xl mb-5 font-bold"
+            className="text-4xl mb-5 font-bold"
             text={[
               "Welcome to my porfolio website",
               "I'm Tuong nice to see you!",
@@ -38,19 +52,23 @@ function LandingPage() {
             showCursor={true}
             cursorCharacter="|"
           />
-          <p className="text-lg text-justify leading-relaxed mr-10">
-            Hello, my name is Trương Quang Tường. I graduated from the
-            University of Information Technology in Ho Chi Minh City, where I
-            majored in Web Programming. I have a strong passion for designing
-            and developing user interfaces, and I also enjoy exploring UX
-            research to create UI designs that truly meet users’ needs. Beyond
-            my academic and professional interests, I love singing. I was an
-            active member of the Lossless Art Club at my university, where I
-            regularly performed at acoustic shows organized by the club. Thanks
-            to these experiences, I had the chance to meet and connect with
-            friends from different faculties, which made my student life even
-            more enjoyable and fulfilling.
+          <p className="text-lg text-justify leading-relaxed mr-10 w-[500px]">
+            Hello, my name is Truong Quang Tuong. I'm a Front-end Developer
+            passionate about creating intuitive and engaging user interfaces.
           </p>
+          <div className="flex items-center">
+            {" "}
+            <ButtonComponent
+              className="bg-gray-900 backdrop-blur-md px-8 py-4 rounded-full mt-5 text-xl border-none"
+              icon={<RiDownloadLine />}
+              label="Download my CV"
+            />
+            <ButtonComponent
+              className="bg-gray-900 backdrop-blur-md px-8 py-4 rounded-full mt-5 ml-5 text-xl border-none"
+              icon={<MdOutlineExplore />}
+              label="Explore my projects"
+            />
+          </div>
         </div>
 
         <div className="lg:mr-[6.5vw]">
@@ -60,7 +78,7 @@ function LandingPage() {
             handle="Tuong"
             status="Online"
             contactText="Contact Me"
-            avatarUrl="https://res.cloudinary.com/ddwkzkht5/image/upload/v1755164931/av1_bjnte9.jpg"
+            avatarUrl="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756196259/Avatar-removebg-preview_gvtzw5.png"
             miniAvatarUrl="https://res.cloudinary.com/ddwkzkht5/image/upload/v1755164936/av2_quwbcb.jpg"
             showUserInfo={true}
             enableTilt={true}
@@ -68,7 +86,9 @@ function LandingPage() {
           />
         </div>
       </div>
-      <div className="relative z-50 mt-10"></div>
+      <div className="mt-5">
+        <Introduce />
+      </div>
     </div>
   );
 }
