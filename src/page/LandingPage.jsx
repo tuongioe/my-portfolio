@@ -35,7 +35,7 @@ function LandingPage() {
       </div>
       {/* Nội dung chính */}
       <div className="content justify-center lg:mt-8">
-        <div className="flex flex-col items-center lg:items-start lg:ml-[4.0vw] text-center lg:text-left">
+        <div className="flex flex-col items-center lg:items-start lg:ml-[3.0vw] text-center lg:text-left">
           {/* Quote Section */}
           <div className="flex items-center w-full justify-start lg:w-[35vw] bg-gray-800/40 mb-5 rounded-xl font-semibold px-2">
             <img
@@ -96,7 +96,7 @@ function LandingPage() {
           </div>
         </div>
 
-        <div className="lg:mr-[4.0vw] lg:block hidden">
+        <div className="lg:mr-[3.0vw] lg:block hidden">
           <ProfileCard
             name="Truong Q.Tuong"
             title="Front-end Dev"
