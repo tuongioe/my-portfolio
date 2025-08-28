@@ -34,10 +34,10 @@ function LandingPage() {
         <Navigation />
       </div>
       {/* Nội dung chính */}
-      <div className="content justify-center">
+      <div className="content justify-center lg:mt-8">
         <div className="flex flex-col items-center lg:items-start lg:ml-[6.5vw] text-center lg:text-left">
           {/* Quote Section */}
-          <div className="flex items-center w-[90%] lg:w-[30vw] bg-gray-800/40 mb-5 rounded-xl font-semibold justify-center lg:justify-start">
+          <div className="flex items-center w-[100%] lg:w-[30vw] bg-gray-800/40 mb-5 rounded-xl font-semibold justify-center lg:justify-start">
             <img
               src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756195912/da955287bab2e05ae8383782bc6ad6b4-removebg-preview_fezhdr.png"
               alt=""
