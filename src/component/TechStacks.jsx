@@ -59,8 +59,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266292/c_-removebg-preview_lhpchc.png"
             alt="C++"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">C++</p>
             <p className="text-sm text-gray">Language</p>
           </div>
@@ -70,8 +71,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266178/sql_lvhorj.png"
             alt="MS SQL"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">MS SQL</p>
             <p className="text-sm text-gray">Language</p>
           </div>
@@ -81,8 +83,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266177/html_zn7lc9.png"
             alt="HTML"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold ">HTML 5</p>
             <p className="text-sm text-gray ">Language</p>
           </div>
@@ -92,8 +95,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266176/css_g2qopx.png"
             alt="CSS"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">CSS 3</p>
             <p className="text-sm text-gray">Language</p>
           </div>
@@ -103,8 +107,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266177/js_cvf7cy.png"
             alt="Javascript"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">Javascript</p>
             <p className="text-sm text-gray">Language</p>
           </div>
@@ -114,8 +119,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266178/react_okpmut.png"
             alt="React JS"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">ReactJS</p>
             <p className="text-sm text-gray ">Library</p>
           </div>
@@ -125,8 +131,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266178/tailwind_na1qu8.png"
             alt="Tailwind CSS"
             style={{ maxWidth: "80px", marginTop: "5px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">Tailwind</p>
             <p className="text-sm text-gray ">Framework</p>
           </div>
@@ -136,8 +143,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266177/git_mbehyp.png"
             alt="Git"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">Git</p>
             <p className="text-sm text-gray ">Version control</p>
           </div>
@@ -147,8 +155,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266919/mongo-removebg-preview_bxutnl.png"
             alt="MongoDB"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">Mongo DB</p>
             <p className="text-sm text-gray ">Database</p>
           </div>
@@ -158,8 +167,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266919/docker-removebg-preview_ufuent.png"
             alt="Docker"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">Docker</p>
             <p className="text-sm text-gray ">Tool</p>
           </div>
@@ -169,8 +179,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756267066/java_vsi8ni.png"
             alt="Java"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">Java</p>
             <p className="text-sm text-gray ">Language</p>
           </div>
@@ -180,8 +191,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756266178/react_okpmut.png"
             alt="React Native"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">React native</p>
             <p className="text-sm text-gray ">Library</p>
           </div>
@@ -191,8 +203,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756278652/github-removebg-preview_zkjhw9.png"
             alt="Git hub"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">Git hub</p>
             <p className="text-sm text-gray ">Repogistory</p>
           </div>
@@ -202,8 +215,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756278653/vscode_e5oozz.png"
             alt="VS Code"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">VS Code</p>
             <p className="text-sm text-gray ">Code Editor</p>
           </div>
@@ -213,8 +227,9 @@ export default function TechStacks() {
             src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756278652/power_v26gyu.png"
             alt="Power Platform"
             style={{ maxWidth: "80px" }}
+            className="ml-8 lg:ml-0"
           />
-          <div className="ml-3">
+          <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
             <p className="text-lg text-white font-bold">Power Platform</p>
             <p className="text-sm text-gray ">Tool</p>
           </div>

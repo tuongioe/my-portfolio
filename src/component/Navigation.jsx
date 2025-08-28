@@ -24,7 +24,7 @@ export default function Navigation() {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            About me
+            About
           </a>
           <a
             href="#tech"
@@ -36,7 +36,7 @@ export default function Navigation() {
                 ?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Tech Stacks
+            Tech
           </a>
           <a
             href="#project"

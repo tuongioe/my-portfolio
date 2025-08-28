@@ -23,7 +23,7 @@ export default function Introduce() {
       >
         <div className="ml-10 mt-10">
           <p className="text-4xl font-bold text-white">About Me</p>
-          <p className="text-lg text-justify leading-relaxed mr-10 w-[465px] lg:w-[500px] text-white mt-5">
+          <p className="text-lg text-justify leading-relaxed lg:mr-10 w-[90%] md:w-[95%] lg:w-[500px] text-white mt-5">
             I'm Trương Quang Tường, a front-end developer passionate about
             creating modern and user-friendly interfaces. I graduated from the
             University of Information Technology, where I built a strong

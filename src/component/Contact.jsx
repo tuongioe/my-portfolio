@@ -29,7 +29,7 @@ export default function Contact() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-4xl mt-10 p-6 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg ">
         {/* Left Column: Social Links */}
-        <div className="flex flex-col space-y-8 text-lg lg:mt-16 lg:ml-20">
+        <div className="flex flex-col space-y-8 text-lg lg:mt-16 lg:ml-20 md:mt-16 md:ml-20">
           <a
             href="https://www.facebook.com/truongtuong.2502/"
             target="_blank"

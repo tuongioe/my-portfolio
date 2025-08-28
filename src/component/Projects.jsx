@@ -9,7 +9,7 @@ export default function Projects() {
         <h1 className="text-center text-5xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 text-transparent bg-clip-text drop-shadow-lg mt-20">
           My Projects
         </h1>
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-y-5 lg:gap-x-0 gap-x-2 lg:mt-20 justify-items-center mt-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-5 lg:gap-x-0 gap-x-2 lg:mt-20 justify-items-center mt-20">
           <a
             href="https://github.com/tuongioe/Smart-Scheduler-BE.git"
             target="_blank"

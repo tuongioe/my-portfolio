@@ -34,9 +34,10 @@ function LandingPage() {
         <Navigation />
       </div>
       {/* Nội dung chính */}
-      <div className="content">
-        <div className="lg:ml-[6.5vw] ">
-          <div className="flex items-center lg:w-[30vw] bg-gray-800/40 mb-5 rounded-xl font-semibold">
+      <div className="content justify-center">
+        <div className="flex flex-col items-center lg:items-start lg:ml-[6.5vw] text-center lg:text-left">
+          {/* Quote Section */}
+          <div className="flex items-center w-[90%] lg:w-[30vw] bg-gray-800/40 mb-5 rounded-xl font-semibold justify-center lg:justify-start">
             <img
               src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756195912/da955287bab2e05ae8383782bc6ad6b4-removebg-preview_fezhdr.png"
               alt=""
@@ -46,38 +47,47 @@ function LandingPage() {
               "Design with purpose. Develop with precision."
             </p>
           </div>
-          <TextType
-            className="text-4xl mb-5 font-bold "
-            text={[
-              "Welcome to my porfolio website",
-              "I'm Tuong nice to see you!",
-            ]}
-            typingSpeed={85}
-            pauseDuration={3000}
-            showCursor={true}
-            cursorCharacter="|"
-          />
-          <p className="text-lg text-justify leading-relaxed lg:mr-10 lg:w-[31.25rem]">
+
+          {/* Typing Text */}
+          <div className="lg:block hidden">
+            <TextType
+              className="text-3xl lg:text-4xl mb-5 font-bold"
+              text={[
+                "Welcome to my portfolio website",
+                "I'm Tuong, nice to see you!",
+              ]}
+              typingSpeed={85}
+              pauseDuration={3000}
+              showCursor={true}
+              cursorCharacter="|"
+            />
+          </div>
+
+          {/* Introduction */}
+          <p className="text-base lg:text-lg text-justify leading-relaxed w-[100%] md:w-[90%] lg:w-[31.25rem] lg:mr-10">
             Hello, my name is Truong Quang Tuong. I'm a Front-end Developer
             passionate about creating intuitive and engaging user interfaces.
           </p>
-          <div className="flex items-center justify-center lg:justify-start">
-            {" "}
+
+          {/* Buttons */}
+          <div className="flex items-center justify-center lg:justify-start mt-5 space-x-8">
             <ButtonComponent
-              className="bg-gray-900/90 backdrop-blur-md px-8 py-4 rounded-full mt-5 lg:text-xl text-lg border-none"
-              icon={<RiDownloadLine size={28} />}
-              label="Download my CV"
+              className="bg-gray-900/90 backdrop-blur-md px-4 py-3 rounded-full text-xl lg:text-xl border-none"
+              icon={<RiDownloadLine size={24} />}
+              label={window.innerWidth < 1024 ? "My CV" : "Download my CV"}
               onClick={() => {
                 const link = document.createElement("a");
                 link.href = "/Truong_Quang_Tuong_CV.pdf";
-                link.download = "Truong-Quang-Tuong-CV.pdf"; // tên file khi tải xuống
+                link.download = "Truong-Quang-Tuong-CV.pdf";
                 link.click();
               }}
             />
             <ButtonComponent
-              className="bg-gray-900/90 backdrop-blur-md px-8 py-4 rounded-full mt-5 ml-5 lg:text-xl text-lg border-none"
-              icon={<MdOutlineExplore size={28} />}
-              label="Explore my projects"
+              className="bg-gray-900/90 backdrop-blur-md px-4 py-3 rounded-full text-xl lg:text-xl border-none ml-4"
+              icon={<MdOutlineExplore size={24} />}
+              label={
+                window.innerWidth < 1024 ? "Project" : "Explore my projects"
+              }
               onClick={() => {
                 const section = document.getElementById("project");
                 section?.scrollIntoView({ behavior: "smooth" });
@@ -86,7 +96,7 @@ function LandingPage() {
           </div>
         </div>
 
-        <div className="lg:mr-[6.5vw]">
+        <div className="lg:mr-[6.5vw] lg:block hidden">
           <ProfileCard
             name="Truong Q.Tuong"
             title="Front-end Dev"
@@ -98,7 +108,6 @@ function LandingPage() {
             showUserInfo={true}
             enableTilt={true}
             showBehindGradient={false}
-            className="lg:block hidden"
           />
         </div>
       </div>

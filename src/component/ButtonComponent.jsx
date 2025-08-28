@@ -22,12 +22,12 @@ export default function ButtonComponent({
       {/* Icon trượt */}
       <span
         className="absolute 
-                   left-[-60px] lg:left-[-60px] 
+                   left-[-50px] lg:left-[-60px] 
                    flex items-center justify-center 
-                   w-[60px] h-[60px] lg:w-[60px] lg:h-[60px] 
+                   w-[50px] h-[50px] lg:w-[60px] lg:h-[60px] 
                    bg-gray-700 text-white rounded-full 
                    transition-all duration-500 ease-in-out
-                   group-hover:left-[calc(100%-60px)] lg:group-hover:left-[calc(100%-60px)]"
+                   group-hover:left-[calc(100%-50px)] lg:group-hover:left-[calc(100%-60px)]"
       >
         {icon}
       </span>
