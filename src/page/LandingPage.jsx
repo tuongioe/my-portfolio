@@ -35,15 +35,15 @@ function LandingPage() {
       </div>
       {/* Nội dung chính */}
       <div className="content justify-center lg:mt-8">
-        <div className="flex flex-col items-center lg:items-start lg:ml-[6.5vw] text-center lg:text-left">
+        <div className="flex flex-col items-center lg:items-start lg:ml-[5.0vw] text-center lg:text-left">
           {/* Quote Section */}
-          <div className="flex items-center w-[100%] lg:w-[30vw] bg-gray-800/40 mb-5 rounded-xl font-semibold justify-center lg:justify-start">
+          <div className="flex items-center w-full lg:w-[30vw] bg-gray-800/40 mb-5 rounded-xl font-semibold px-2">
             <img
               src="https://res.cloudinary.com/ddwkzkht5/image/upload/v1756195912/da955287bab2e05ae8383782bc6ad6b4-removebg-preview_fezhdr.png"
               alt=""
-              style={{ maxWidth: "3rem", paddingLeft: "10px" }}
+              className="w-12"
             />
-            <p className="p-2">
+            <p className="p-2 flex-1">
               "Design with purpose. Develop with precision."
             </p>
           </div>
@@ -96,7 +96,7 @@ function LandingPage() {
           </div>
         </div>
 
-        <div className="lg:mr-[6.5vw] lg:block hidden">
+        <div className="lg:mr-[5.0vw] lg:block hidden">
           <ProfileCard
             name="Truong Q.Tuong"
             title="Front-end Dev"
