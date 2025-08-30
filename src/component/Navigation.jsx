@@ -2,7 +2,7 @@ import "../assets/style/Navigation.css";
 
 export default function Navigation() {
   return (
-    <div className="w-full flex justify-center fixed z-50">
+    <div className="w-full flex items-center justify-center fixed z-50 lg:ml-2">
       <div className="lg:w-full max-w-6xl flex justify-between items-center bg-gray-900/50 backdrop-blur-md px-8 py-4 rounded-2xl mt-5">
         {/* Logo */}
         <h1
