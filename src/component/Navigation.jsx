@@ -1,4 +1,5 @@
 import "../assets/style/Navigation.css";
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
   return (
@@ -62,6 +63,9 @@ export default function Navigation() {
           >
             Contact
           </a>
+          <Link to="/login" className="text-white nav-link font-bold">
+            Author
+          </Link>
         </nav>
       </div>
     </div>
