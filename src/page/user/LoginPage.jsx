@@ -25,10 +25,13 @@ export default function LoginPage() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5100/api/auth/login", {
-        username, // gửi đúng field backend cần
-        password,
-      });
+      const res = await axios.post(
+        "my-portfolio-be-zeta.vercel.app/api/auth/login",
+        {
+          username, // gửi đúng field backend cần
+          password,
+        }
+      );
 
       // ✅ lưu token để sử dụng cho các request khác
       localStorage.setItem("token", res.data.token);
