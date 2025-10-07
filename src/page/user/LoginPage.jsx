@@ -26,7 +26,7 @@ export default function LoginPage() {
 
     try {
       const res = await axios.post(
-        "my-portfolio-be-zeta.vercel.app/api/auth/login",
+        "https://my-portfolio-be-zeta.vercel.app/api/auth/login",
         {
           username, // gửi đúng field backend cần
           password,
