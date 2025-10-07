@@ -1,49 +1,37 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useContext } from "react";
+import { TechStackContext } from "../context/TechStackContext";
 
 function TechStackTab() {
-  const [techStacks, setTechStacks] = useState([]);
+  const { techStacks, createTechStack, editTechStack, removeTechStack } =
+    useContext(TechStackContext);
+
   const [showForm, setShowForm] = useState(false);
   const [editingItem, setEditingItem] = useState(null);
   const [form, setForm] = useState({ icon: "", name: "", type: "" });
 
-  // 🧠 Lấy danh sách tech stack từ BE
-  const fetchTechStacks = async () => {
-    const res = await fetch("http://localhost:5000/api/tech-stacks");
-    const data = await res.json();
-    setTechStacks(data);
-  };
-
-  useEffect(() => {
-    fetchTechStacks();
-  }, []);
-
   // 📝 Submit form (thêm hoặc sửa)
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const method = editingItem ? "PUT" : "POST";
-    const url = editingItem
-      ? `http://localhost:5000/api/tech-stacks/${editingItem.id}`
-      : `http://localhost:5000/api/tech-stacks`;
-
-    await fetch(url, {
-      method,
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + localStorage.getItem("token"),
-      },
-      body: JSON.stringify(form),
-    });
-
+    if (editingItem) {
+      await editTechStack(editingItem.id, form);
+    } else {
+      await createTechStack(form);
+    }
     setShowForm(false);
     setEditingItem(null);
     setForm({ icon: "", name: "", type: "" });
-    fetchTechStacks();
   };
 
   const handleEdit = (item) => {
     setEditingItem(item);
     setForm(item);
     setShowForm(true);
+  };
+  const handleRemove = () => {
+    removeTechStack(editingItem.id);
+    setShowForm(false);
+    setEditingItem(null);
+    setForm({ icon: "", name: "", type: "" });
   };
 
   return (
@@ -124,6 +112,15 @@ function TechStackTab() {
               >
                 {editingItem ? "Update" : "Add"}
               </button>
+              {editingItem && (
+                <button
+                  type="button"
+                  onClick={handleRemove}
+                  className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+                >
+                  Delete
+                </button>
+              )}
             </div>
           </form>
         </div>

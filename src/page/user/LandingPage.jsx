@@ -39,7 +39,7 @@ function LandingPage() {
 
       {/* Nội dung chính */}
 
-      <div className="content justify-center lg:mt-8">
+      <section className="content justify-center lg:mt-8">
         <FadeLeftWrapper delay={0.1}>
           <div className="flex flex-col items-center lg:items-start lg:ml-[1.5vw] text-center lg:text-left">
             {/* Quote Section */}
@@ -119,31 +119,31 @@ function LandingPage() {
             />
           </div>
         </FadeRightWrapper>
-      </div>
+      </section>
 
       {/* Các section với hiệu ứng fade up */}
       <FadeUpWrapper delay={0.1}>
-        <div id="about">
+        <section id="about">
           <Introduce />
-        </div>
+        </section>
       </FadeUpWrapper>
 
       <FadeUpWrapper delay={0.2}>
-        <div id="tech">
+        <section id="tech">
           <TechStacks />
-        </div>
+        </section>
       </FadeUpWrapper>
 
       <FadeUpWrapper delay={0.3}>
-        <div id="project">
+        <section id="project">
           <Projects />
-        </div>
+        </section>
       </FadeUpWrapper>
 
       <FadeUpWrapper delay={0.4}>
-        <div id="contact">
+        <section id="contact">
           <Contact />
-        </div>
+        </section>
       </FadeUpWrapper>
 
       <Footer />
