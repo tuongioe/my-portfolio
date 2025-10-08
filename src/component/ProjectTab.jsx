@@ -13,7 +13,9 @@ function ProjectTab() {
   const [techIconInput, setTechIconInput] = useState("");
 
   const fetchProjects = async () => {
-    const res = await fetch("http://localhost:5100/api/projects");
+    const res = await fetch(
+      "https://tuong-portfolio-be.vercel.app/api/projects"
+    );
     const data = await res.json();
     setProjects(data);
   };

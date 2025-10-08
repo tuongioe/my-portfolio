@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://my-portfolio-be-one.vercel.app/api/", // backend URL
+  baseURL: "https://tuong-portfolio-be.vercel.app/api/", // backend URL
   withCredentials: true, // cookie
 });
 
