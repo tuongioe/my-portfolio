@@ -13,7 +13,7 @@ function ProjectTab() {
   const [techIconInput, setTechIconInput] = useState("");
 
   const fetchProjects = async () => {
-    const res = await fetch("http://localhost:5000/api/projects");
+    const res = await fetch("http://localhost:5100/api/projects");
     const data = await res.json();
     setProjects(data);
   };
@@ -61,7 +61,7 @@ function ProjectTab() {
     <div className="relative">
       <h2 className="text-2xl font-semibold mb-4">Projects</h2>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {projects.map((proj) => (
           <div
             key={proj.id}
@@ -75,6 +75,16 @@ function ProjectTab() {
             />
             <div className="font-semibold">{proj.name}</div>
             <div className="text-sm text-gray-500 break-words">{proj.link}</div>
+            <div className="tech-icons flex gap-2 mt-2">
+              {proj.tech_icons.map((tech_icon, index) => (
+                <img
+                  key={index}
+                  src={tech_icon}
+                  alt="tech icon"
+                  className="w-6 h-6"
+                />
+              ))}
+            </div>
           </div>
         ))}
       </div>

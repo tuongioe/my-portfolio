@@ -33,7 +33,7 @@ function LandingPage() {
         noiseAmount={0.1}
         distortion={0.05}
       />
-      <div className="nav">
+      <div className="nav lg:ml-2">
         <Navigation />
       </div>
 
@@ -41,7 +41,7 @@ function LandingPage() {
 
       <section className="content justify-center lg:mt-8">
         <FadeLeftWrapper delay={0.1}>
-          <div className="flex flex-col items-center lg:items-start lg:ml-[1.5vw] text-center lg:text-left">
+          <div className="flex flex-col items-center lg:items-start lg:ml-[1.5vw] text-center lg:text-left ">
             {/* Quote Section */}
             <div className="flex items-center w-full justify-start lg:w-[35vw] bg-gray-800/40 mb-5 rounded-xl font-semibold px-2">
               <img

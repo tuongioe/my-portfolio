@@ -38,7 +38,7 @@ function TechStackTab() {
     <div className="relative">
       <h2 className="text-2xl font-semibold mb-4">Tech Stacks</h2>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-10 gap-4">
         {techStacks.map((stack) => (
           <div
             key={stack.id}
