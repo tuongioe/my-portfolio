@@ -33,7 +33,7 @@ function LandingPage() {
         noiseAmount={0.1}
         distortion={0.05}
       />
-      <div className="nav lg:ml-2">
+      <div className="nav">
         <Navigation />
       </div>
 
