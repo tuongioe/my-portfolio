@@ -71,7 +71,7 @@ export default function TechStacks() {
             />
             <div className="lg:ml-3 md:ml-20 lg:block md:block hidden">
               <p className="text-lg text-white font-bold">{stack.name}</p>
-              <p className="text-sm text-gray">{stack.name}</p>
+              <p className="text-sm text-gray">{stack.type}</p>
             </div>
           </div>
         ))}

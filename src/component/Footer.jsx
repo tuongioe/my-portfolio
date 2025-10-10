@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
         {/* Cột trái */}
         <div className="mb-4 lg:mb-0">
-          <h1 className="text-4xl font-bold text-indigo-300">My Portfolio</h1>
+          <h1 className="text-4xl font-bold text-indigo-300">MyPortfolio</h1>
         </div>
 
         {/* Cột giữa */}

@@ -36,17 +36,19 @@ function TechStackTab() {
 
   return (
     <div className="relative">
-      <h2 className="text-2xl font-semibold mb-4">Tech Stacks</h2>
+      <h2 className="text-2xl font-semibold mb-4 text-indigo-400">
+        Tech Stacks
+      </h2>
 
-      <div className="grid grid-cols-10 gap-4">
+      <div className="grid lg:grid-cols-8 grid-cols-2 gap-4">
         {techStacks.map((stack) => (
           <div
             key={stack.id}
             onClick={() => handleEdit(stack)}
-            className="border rounded-lg p-4 cursor-pointer hover:bg-gray-50"
+            className="border rounded-lg p-4 cursor-pointer bg-gray-800 hover:bg-gray-800/40 border-none"
           >
             <img src={stack.icon} alt={stack.name} className="h-12 mb-2" />
-            <div className="font-semibold">{stack.name}</div>
+            <div className="font-semibold text-indigo-500">{stack.name}</div>
             <div className="text-sm text-gray-500">{stack.type}</div>
           </div>
         ))}

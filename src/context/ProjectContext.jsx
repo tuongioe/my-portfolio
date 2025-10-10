@@ -33,7 +33,7 @@ const ProjectProvider = ({ children }) => {
     try {
       const res = await updateProject(id, data);
       setProjects((prev) =>
-        prev.map((item) => (item._id === id ? res.data : item))
+        prev.map((item) => (item.id === id ? res.data : item))
       );
     } catch (err) {
       console.error("Lỗi khi cập nhật project:", err);
@@ -43,7 +43,7 @@ const ProjectProvider = ({ children }) => {
   const removeProject = async (id) => {
     try {
       await deleteProject(id);
-      setProjects((prev) => prev.filter((item) => item._id !== id));
+      setProjects((prev) => prev.filter((item) => item.id !== id));
     } catch (err) {
       console.error("Lỗi khi xoá project:", err);
     }

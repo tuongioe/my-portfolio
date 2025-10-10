@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { ProjectContext } from "../context/ProjectContext";
 
 function ProjectTab() {
   const [projects, setProjects] = useState([]);
@@ -28,8 +29,8 @@ function ProjectTab() {
     e.preventDefault();
     const method = editingItem ? "PUT" : "POST";
     const url = editingItem
-      ? `http://localhost:5100/api/projects/${editingItem.id}`
-      : `http://localhost:5100/api/projects`;
+      ? `https://tuong-portfolio-be.vercel.app/api/projects/${editingItem.id}`
+      : `https://tuong-portfolio-be.vercel.app/api/projects`;
 
     await fetch(url, {
       method,
@@ -61,29 +62,29 @@ function ProjectTab() {
 
   return (
     <div className="relative">
-      <h2 className="text-2xl font-semibold mb-4">Projects</h2>
+      <h2 className="text-2xl font-semibold text-indigo-400 mb-4">Projects</h2>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-5 grid-cols-1 gap-4">
         {projects.map((proj) => (
           <div
             key={proj.id}
             onClick={() => handleEdit(proj)}
-            className="border rounded-lg p-4 cursor-pointer hover:bg-gray-50"
+            className="border rounded-lg p-4 cursor-pointer bg-gray-800 hover:bg-gray-800/40 border-none"
           >
             <img
               src={proj.preview}
               alt={proj.name}
-              className="h-32 object-cover mb-2"
+              className="h-32 object-cover mb-2 justify-items-center"
             />
-            <div className="font-semibold">{proj.name}</div>
-            <div className="text-sm text-gray-500 break-words">{proj.link}</div>
+            <div className="font-semibold text-indigo-500">{proj.name}</div>
+
             <div className="tech-icons flex gap-2 mt-2">
               {proj.tech_icons.map((tech_icon, index) => (
                 <img
                   key={index}
                   src={tech_icon}
                   alt="tech icon"
-                  className="w-6 h-6"
+                  className="w-7 h-7"
                 />
               ))}
             </div>

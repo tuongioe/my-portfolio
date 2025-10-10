@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TechStackTab from "../../component/TechStackTab";
 import ProjectTab from "../../component/ProjectTab";
+import { Link } from "react-router-dom";
 
 export default function AdminPage() {
   const [activeTab, setActiveTab] = useState("tech");
@@ -8,26 +9,32 @@ export default function AdminPage() {
   return (
     <div className="flex h-screen">
       {/* Menu bên trái */}
-      <div className="w-64 bg-gray-800 text-white flex flex-col">
+      <div className="w-64 bg-gray-800 text-gray-500 flex flex-col">
         <div className="p-4 text-2xl font-bold border-b border-gray-700">
           Admin Panel
         </div>
         <button
           onClick={() => setActiveTab("tech")}
-          className={`p-4 text-left bg-transparent hover:bg-gray-700 ${
-            activeTab === "tech" ? "bg-gray-700" : ""
+          className={`p-4 text-left bg-transparent hover:bg-gray-700 font-semibold border-none ${
+            activeTab === "tech" ? "bg-blue-200/40 text-white " : ""
           }`}
         >
           Tech Stacks
         </button>
         <button
           onClick={() => setActiveTab("project")}
-          className={`p-4 text-left bg-transparent hover:bg-gray-700 ${
-            activeTab === "project" ? "bg-gray-700" : ""
+          className={`p-4 text-left bg-transparent hover:bg-gray-700 font-semibold border-none ${
+            activeTab === "project" ? "bg-blue-200/40 text-white" : ""
           }`}
         >
           Projects
         </button>
+        <Link
+          to="/"
+          className="p-4 text-left text-lg text-red-700 hover:text-red-500 mt-auto ml-16"
+        >
+          Log out
+        </Link>
       </div>
 
       {/* Nội dung bên phải */}

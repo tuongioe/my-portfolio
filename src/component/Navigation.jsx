@@ -14,7 +14,7 @@ export default function Navigation() {
         </h1>
 
         {/* Menu */}
-        <nav className="flex space-x-8">
+        <nav className="flex lg:space-x-8 text-md space-x-6">
           <a
             href="#about"
             className="text-white nav-link font-bold"
@@ -63,7 +63,7 @@ export default function Navigation() {
           >
             Contact
           </a>
-          <Link to="/login" className="text-white nav-link font-bold">
+          <Link to="/login" className="text-white nav-link font-bold hidden">
             Author
           </Link>
         </nav>
