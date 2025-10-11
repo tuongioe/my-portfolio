@@ -9,7 +9,7 @@ export default function AdminPage() {
   return (
     <div className="flex h-screen">
       {/* Menu bên trái */}
-      <div className="w-64 bg-gray-800 text-gray-500 flex flex-col">
+      <div className="lg:w-64 w-1/3 bg-gray-800 text-gray-500 flex flex-col">
         <div className="p-4 text-2xl font-bold border-b border-gray-700">
           Admin Panel
         </div>
