@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ProjectCard({ preview, name, technologies }) {
   return (
-    <div className="lg:w-[300px] w-[350px] h-[300px] bg-gray-900 rounded-2xl overflow-hidden shadow-lg p-4 flex flex-col">
+    <div className="lg:w-[280px] w-[350px] h-[300px] bg-gray-900 rounded-2xl overflow-hidden shadow-lg p-4 flex flex-col">
       {/* Ảnh preview */}
       <div className="w-full h-[200px] rounded-lg overflow-hidden">
         <img

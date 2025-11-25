@@ -133,7 +133,7 @@ export default function Introduce() {
                     <p className="text-gray-300">2021-2025</p>
                   </div>
                 </div>
-                <p className="text-white font-semibold mt-5 ml-5">GPA: 3.13</p>
+                <p className="text-white font-semibold mt-5 ml-5">CPA: 3.13</p>
                 <p className="text-white font-semibold mt-5 ml-5">
                   UIT Global Scholarship{" "}
                 </p>

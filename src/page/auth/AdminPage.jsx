@@ -31,7 +31,7 @@ export default function AdminPage() {
         </button>
         <Link
           to="/"
-          className="p-4 text-left text-lg text-red-700 hover:text-red-500 mt-auto ml-16"
+          className="p-4 text-left text-lg text-white lg:w-[180px] w-[100px] h-14 bg-red-700/40 hover:text-red-500 mt-auto lg:ml-12 ml-10 flex items-center justify-center rounded-lg mb-6 font-bold"
         >
           Log out
         </Link>

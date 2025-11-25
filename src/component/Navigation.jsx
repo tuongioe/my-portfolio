@@ -89,7 +89,7 @@ export default function Navigation() {
           {/* Icon Menu */}
           <div onClick={handleShowNavigation} className="cursor-pointer">
             {showNavigation ? (
-              <IoClose className="w-7 h-7 font-bold text-indigo-300 " />
+              <IoClose className="w-10 h-10 font-bold text-indigo-300 " />
             ) : (
               <FaBars className="w-8 h-8 font-bold text-indigo-300 " />
             )}
@@ -151,6 +151,14 @@ export default function Navigation() {
                 }}
               >
                 Contact
+              </li>
+              <li>
+                <Link
+                  to="/login"
+                  className="text-white text-2xl nav-link font-bold cursor-pointer"
+                >
+                  Author
+                </Link>
               </li>
             </ul>
           </nav>

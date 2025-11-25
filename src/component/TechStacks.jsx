@@ -57,7 +57,7 @@ export default function TechStacks() {
       <h1 className="text-center text-5xl font-extrabold bg-gradient-to-r from-purple-400 via-pink-500 to-yellow-400 text-transparent bg-clip-text drop-shadow-lg">
         Tools and Technologies
       </h1>
-      <div className="grid lg:grid-cols-5 grid-cols-2 gap-4 p-4 lg:w-[75rem] mx-auto justify-center mt-12">
+      <div className="grid lg:grid-cols-5 grid-cols-2 gap-4 p-4 lg:w-[74rem] mx-auto justify-center mt-12">
         {techStacks.map((stack) => (
           <div
             key={stack.id}
